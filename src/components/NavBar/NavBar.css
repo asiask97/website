@@ -1,17 +1,3 @@
-
-/* needed for transition of gradiant background */
-/*@property --myColor1 {
-    syntax: '<color>';
-    initial-value: hsla(206, 47%, 9%, 1);
-    inherits: false;
-}
-  
-@property --myColor2 {
-    syntax: '<color>';
-    initial-value: hsla(206, 47%, 9%, 1);
-    inherits: false;
-}*/
-
 .NavBar{
     width: 100vw;
     height: 50px;
@@ -20,11 +6,7 @@
     position: fixed;
     z-index: 1;
     background-color: hsla(206, 47%, 9%, 1);
-    /*--myColor1: hsla(206, 47%, 9%, 1);
-    --myColor2: hsla(206, 47%, 9%, 1);
-    background: linear-gradient(90deg, var(--myColor1) 26%, var(--myColor2) 100%);
-    transition: --myColor1 2s, --myColor2 2s;*/
-
+    transition: ease-in 1s;
 }
 
 .NavBar .img{
@@ -33,13 +15,13 @@
     margin-top: -5px;
     height: 55px;
     float: left;
+    transition: ease-in 1s;
 }
 
-
+/*changes color of nav bar*/
 .activeNav{
-    background-color: white;
-    /*--myColor2: hsla(207, 37%, 24%, 1);
-    transition: --myColor1 2s, --myColor2 2s;*/
+    background-color: white !important;
+    transition: ease-in 1s;
 }
 
 

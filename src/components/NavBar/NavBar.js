@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import logo from '../../img/logoDarkBg.svg';
+import logoWhite from '../../img/logoDarkBg.svg';
+import logoBlack from '../../img/logoLightBg.svg';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -18,7 +19,7 @@ const NavBar = () => {
 
     return(
         <div className = {navbar ? 'activeNav NavBar' : 'NavBar'}>
-            <img className ='img' src={logo}/>
+            <img className ={navbar ? 'activeNav img' : 'img'} src={navbar ? logoBlack : logoWhite}/>
         </div>
     )
 
