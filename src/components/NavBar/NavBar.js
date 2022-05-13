@@ -19,7 +19,7 @@ const NavBar = () => {
 
     return(
         <div className = {navbar ? 'activeNav NavBar' : 'NavBar'}>
-            <img className ={navbar ? 'activeNav img' : 'img'} src={navbar ? logoBlack : logoWhite}/>
+            <img className ={navbar ? 'activeNav img' : 'img'} src={navbar ? logoBlack : logoWhite} alt='DLT Capital logo'/>
         </div>
     )
 

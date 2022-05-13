@@ -1,13 +1,25 @@
+import React from 'react';
 import './App.css';
 import '../../styles/fonts.css'
 import NavBar from '../NavBar/NavBar';
+import MainPanel from '../MainPanel/MainPanel';
+//Images on main page
+import img1 from '../../img/img1.jpg';
 
 
 function App() {
+
+  // load on 0 on refresh
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
+  const panelOne = {textOne: 'Some text about company idk yet  about how good the company is and what it dose like its super fast or somethin', textTwo: 'Something text', buttonText: 'Conact Us', image: img1}
+  
   return (
     <div className="App">
       {/* --- NAV BAR --- */}
-      <NavBar></NavBar>
+      <NavBar/>
       {/* --- HERO SECTION --- */}
       <div className='hero_section'>
 
@@ -19,7 +31,11 @@ function App() {
       </div>
 
       {/* --- BODY CONTENT --- */}
-      <h1>Somethis is going to be here idk yet text</h1>
+      {
+        //<div className='container' ref={container}></div>
+      }
+      <div className='break'></div>
+      <MainPanel content={panelOne}/>
       <br></br>
       <br></br>
       <br></br>
