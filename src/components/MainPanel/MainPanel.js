@@ -22,15 +22,19 @@ const MainPanel = (props) => {
 
     return(
        <div className='MainPanel'>
-        
-        <img src={props.content.image}></img>
-        <div className='headingContainer'>
+          <div className='overlay'>
+            <img src={props.content.image}></img>
+          </div>
+
+          <div className='headingContainer'>
 
             <h1 className='heading' >{props.content.textTwo}</h1>
             <div className='container' ref={container}></div>
-        </div>
-        <p className='bodytext'>{props.content.textOne}</p>
-        <button><span class="text">{props.content.buttonText}</span></button>
+
+          </div>
+
+          <p className='bodytext'>{props.content.textOne}</p>
+          <button><span class="text">{props.content.buttonText}</span></button>
         
        </div> 
     )
